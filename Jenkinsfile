@@ -5,7 +5,6 @@ node {
         }
         catch (exc) {
             echo 'Error!!'
-            throw
         }
     }
 }
