@@ -1,10 +1,11 @@
-pipeline {
-    agent any 
-    stages {
-        stage('Test') {
-            steps {
-                echo 'Hello world!' 
-            }
+node {
+    stage('Hello Test') {
+        try {
+            echo 'Hello World'
+        }
+        catch (exc) {
+            echo 'Error!!'
+            throw
         }
     }
 }
